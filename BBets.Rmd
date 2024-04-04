@@ -41,6 +41,21 @@ The function will be given a class_size by number of students, odds, and Number_
 ## the standard deviation and a 95% confidence interval for their earnings?
   
 <!--Explain and display your method of coming up with a 95% confidence interval of  professor Brownlows winnings (or losings)-->
+```{r}
+for (student in 2:30) {
+  winnings=BrLw(student,1,1000)
+  print(paste(student, winnings))
+}
+
+```
+```{r}
+winnings=list()
+for(i in 1:500){
+winnings[i] = BrLw(35,2,637)
+}
+print(winnings)
+
+```
 
 
 # What are the fair odds? Use manipulation of odds in the function to tune Brownlows earnings to zero. 
